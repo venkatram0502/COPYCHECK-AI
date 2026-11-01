@@ -1,0 +1,1 @@
+Add more sample academic .txt or selectable-text .pdf files here. Use synthetic or openly licensed examples and avoid confidential student data.

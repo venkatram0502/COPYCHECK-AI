@@ -1,0 +1,1 @@
+Normalization is a database design technique used to organize tables and reduce data redundancy. It helps improve data integrity and avoids insertion, update, and deletion anomalies. First Normal Form requires each column to contain atomic values and each record to be unique.

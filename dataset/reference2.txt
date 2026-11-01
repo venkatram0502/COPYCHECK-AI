@@ -1,0 +1,1 @@
+A computer network is a group of interconnected devices that communicate and share resources. The Transmission Control Protocol provides reliable data delivery. The Internet Protocol is responsible for logical addressing and routing packets between networks.

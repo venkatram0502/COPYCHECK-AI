@@ -1,0 +1,1 @@
+Java is a high-level, class-based, object-oriented programming language. A class is a blueprint for creating objects. An object is an instance of a class and contains state and behavior. Inheritance allows one class to acquire methods and fields from another class.
