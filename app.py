@@ -382,7 +382,12 @@ with tab3:
             with col:
                 st.markdown(f'<div class="metric"><div class="metric-label">{label}</div><div class="metric-value">{value}</div></div>', unsafe_allow_html=True)
         df = pd.DataFrame([{"Source":r["source"],"Compared with":r["target"],"Similarity":r["score"]} for r in all_results])
-        st.bar_chart(df.set_index("Compared with")["Similarity"])
+        st.subheader("Similarity by comparison")
+        for _, row in df.iterrows():
+            st.write(f"**{row['Source']}** compared with **{row['Compared with']}**")
+            score = float(row["Similarity"])
+            st.progress(min(max(int(round(score)), 0), 100))
+            st.caption(f"Similarity: {score:.1f}%")
     else:
         st.info("Run a document comparison or reference database check. Your analysis statistics will appear here.")
 
